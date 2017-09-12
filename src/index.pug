@@ -1,0 +1,45 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+	head(lang="en")
+		include pug/metatags.pug
+		+title('leko-team_test-task')
+		include pug/styles.pug
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700&amp;subset=cyrillic" rel="stylesheet")
+
+	body
+		include pug/svg.pug
+
+		.leko-team
+			section.form-wrapper
+				.form-wrapper_img
+					header.form-content
+						img#form-content_logo(src="images/header-logo__img.png" alt="")
+						h1.form-content_header Потребительский Кредит от <b>16.9%</b>
+						.form-service
+							.form-service_item
+								svg.form-service_svg 
+									circle.form-service_circle(r="5" cx="50%" cy="50%" fill="#ffffff")
+								span Снижаем ставку на <b>1%</b> каждый год
+							.form-service_item
+								svg.form-service_svg 
+									circle.form-service_circle(r="5" cx="50%" cy="50%" fill="#ffffff")
+								span Без комиссии, залога и поручителей
+							.form-service_item
+								svg.form-service_svg 
+									circle.form-service_circle(r="5" cx="50%" cy="50%" fill="#ffffff")
+								span Оформи за&nbsp;<b>5 минут</b>
+							.form-service_item
+								svg.form-service_svg 
+									circle.form-service_circle(r="5" cx="50%" cy="50%" fill="#ffffff")
+								span Долгосрочное погашение
+			section.form
+				h2.form_header Онлайн заявка
+				.form_step-one 
+			.form-wrapper_whitespace
+
+			
+
+		include pug/scripts.pug
