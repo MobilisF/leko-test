@@ -48,6 +48,21 @@
 
 $font-family-main: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 
+@font-face {
+	src: url("../fonts/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue-Bold.woff") format("woff");
+	font-family: "Helvetica Neue";
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	src: url("../fonts/HelveticaNeue-Light.woff") format("woff"), url("../fonts/HelveticaNeue-Light.woff") format("woff");
+	font-family: "Helvetica Neue";
+	font-style: normal;
+	font-weight: light;
+}
+
+
 // 1. Global
 // ---------
 
