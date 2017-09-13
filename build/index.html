@@ -55,14 +55,16 @@
             <p class="form_patr-txt">Отчество</p>
             <input class="form_patr-input" type="text" pattern="[A-Za-zА-Яа-яЁё]{0,15}" placeholder="Анатольевич" title="Ваше отчество" required>
           </div>
-          <div class="radiobutton">
+          <div class="form_radio">
             <p class="form_citizen-txt">Гражданство РФ</p>
-            <input class="form_citizen-input" type="radio" name="def" id="radio-no" value="no">
-            <label class="form_citizen-label" for="radio-no">Нет</label>
-            <input class="form_citizen-input" type="radio" name="def" id="radio-yes" value="yes" required>
-            <label class="form_citizen-label" for="radio-yes">Да</label>
+            <div class="radiobutton">
+              <input class="form_citizen-input1" type="radio" name="def" id="radio-no" value="no">
+              <label class="form_citizen-label1" for="radio-no">Нет</label>
+              <input class="form_citizen-input2" type="radio" name="def" id="radio-yes" value="yes" required>
+              <label class="form_citizen-label2" for="radio-yes">Да</label>
+            </div>
           </div>
-          <button class="b-form-one__save-button" type="submit">Отправить заявку</button>
+          <button class="form_send" type="submit">Отправить заявку</button>
         </form>
       </section>
       <div class="form-wrapper_whitespace"></div>

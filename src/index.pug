@@ -48,13 +48,14 @@ html
 					.one
 						p.form_patr-txt Отчество
 						input.form_patr-input(type="text" pattern="[A-Za-zА-Яа-яЁё]{0,15}" placeholder="Анатольевич" title="Ваше отчество" required)
-					.radiobutton
+					.form_radio
 						p.form_citizen-txt Гражданство РФ
-						input.form_citizen-input(type='radio' name="def" id="radio-no" value="no")
-						label.form_citizen-label(for="radio-no") Нет
-						input.form_citizen-input(type='radio' name="def" id="radio-yes" value="yes" required)
-						label.form_citizen-label(for="radio-yes") Да
-					button.b-form-one__save-button(type="submit") Отправить заявку
+						.radiobutton
+							input.form_citizen-input1(type='radio' name="def" id="radio-no" value="no")
+							label.form_citizen-label1(for="radio-no") Нет
+							input.form_citizen-input2(type='radio' name="def" id="radio-yes" value="yes" required)
+							label.form_citizen-label2(for="radio-yes") Да
+					button.form_send(type="submit") Отправить заявку
 				
 				
 				
